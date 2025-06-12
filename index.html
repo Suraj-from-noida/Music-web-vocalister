@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOCALISTER</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <header> 
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/vocalister pic.png" alt="Logo" style="background-color: darkred;">
+    </div > 
+
+    <!-- Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()" style="color: black;">☰</div>
+     <button onclick="changeColor()" class="change-color">
+    <i class="fa-solid fa-palette"></i> Change Background
+  </button>
+
+    <!-- Menu Container -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="./hariyanvi.html">Haryanvi Songs</a></li>
+      <li><a href="./bhojpuri.html">Bhojpuri Songs</a></li>
+      <li><a href="./english-song.html">English Songs</a></li>
+      <li><a href="./background-music.html">Background Music</a></li>
+      <li><a href="./dj-songs.html">DJ Songs</a></li>
+    </ul>
+
+    <div class="search-box">
+      <input type="search" id="searchInput" placeholder="Search Singer">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+  </nav>
+</header>
+
+
+  
+
+  <div id="result"></div>
+  <div class="gif"><img src="images/arijit 2 4k.webp" alt="Music GIF"></div>
+
+  <div class="popularsinger">
+    <h1>Popular Singers</h1>
+  </div>
+
+  <div class="singer-grid" id="defaultGrid">
+    <div class="singer"><a href="https://www.youtube.com/watch?v=aS_NfWJzPN8"><img src="images/Lata_Mangeshkar_ji-real.jpg" alt="Lata Mangeshkar"><p>Lata Mangeshkar</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=_JhQs8HP8tE&t=10s"><img src="images/real hardy sandhu.jpg" alt="Hardy Sandhu"><p>Hardy Sandhu</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=hzWgHGqKg1Q"><img src="images/mohhamad rafi.jpg" alt="Mohammad Rafi"><p>Mohammad Rafi</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=BAJOG2fKTeQ"><img src="images/anuradha panduwal" alt="Anuradha Paudwal"><p>Anuradha Paudwal</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=7MjZYvAAakI"><img src="images/ashabhosle2" alt="Asha Bhosle"><p>Asha Bhosle</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=ZkQszxZXJSA"><img src="images/kishor kumar.jpg" alt="Kishore Kumar"><p>Kishore Kumar</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=W_TqFFWAdPk"><img src="images/hariharan" alt="Hariharan"><p>Hariharan</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=mtm2BlADp3E"><img src="images/roop kumar rathor.jpeg" alt="Roop Kumar Rathore"><p>Roop Kumar Rathore</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=hYhCAny7Dy0"><img src="images/sonu nigam2" alt="Sonu Nigam"><p>Sonu Nigam</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=jmkisZeuKL4"><img src="images/rahat.jpg" alt="Rahat Fateh Ali Khan"><p>Rahat Fateh Ali Khan</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=r0c1f6XxRQg"><img src="images/kk.jpg" alt="KK"><p>KK</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=IVjl5u4s-mQ"><img src="images/arijitsingh" alt="Arijit Singh"><p>Arijit Singh</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=uBsVGGjOMXI"><img src="images/kailash kher" alt="Kailash Kher"><p>Kailash Kher</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=4iUOahiafSw"><img src="images/abhijeet bhatacharya.jpeg" alt="Abhijeet Bhattacharya"><p>Abhijeet Bhattacharya</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=25hQjJN0QM4"><img src="images/mohit chauhan.jfif" alt="Mohit Chauhan"><p>Mohit Chauhan</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=xp5j2IHyTgs"><img src="images/kumar sanu" alt="Kumar Sanu"><p>Kumar Sanu</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=2H760kq6XFQ"><img src="images/alka-yagnik" alt="Alka Yagnik"><p>Alka Yagnik</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=BEMBRPqjlrg"><img src="images/honey singh.jpg" alt="Yo Yo Honey Singh"><p>Yo Yo Honey Singh</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=5k-onJScxPw"><img src="images/sukhwendar singh.jfif" alt="Sukhwinder Singh"><p>Sukhwinder Singh</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=zHhsKl38bm0"><img src="images/vishal-dadlani8.jpg" alt="Vishal Dadlani"><p>Vishal Dadlani</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=6UVK2VlvTL0"><img src="images/badshah.jpg" alt="Badshah"><p>Badshah</p></a></div>
+    <div class="singer"><a href="https://youtu.be/-cfJpmLjrRM?si=LITlyz_OREEBD5at"><img src="images/Kavita Krishnamurthy.jpeg" alt="Kavita Krishnamurthy"><p>Kavita Krishnamurthy</p></a></div>
+    <div class="singer"><a href="https://youtu.be/oPf1b_gG4p8?si=93v_oP7mDsf9rqvd"><img src="images/justin.jpg" alt="Justin Bieber"><p>Justin Bieber</p></a></div>
+    <div class="singer"><a href="https://youtu.be/UmXWw7W_ZRw?si=P7R1axYVhySoWrc0"><img src="images/nusrat fateh 2" alt="Nusrat Fateh Ali Khan"><p>Nusrat Fateh Ali Khan</p></a></div>
+    <div class="singer"><a href="https://youtu.be/DXDxx2AbhZ0?si=yWLTbUFv7UMF1atF"><img src="images/guru randhawa.jpg" alt="Guru Randhawa"><p>Guru Randhawa</p></a></div>
+    <div class="singer"><a href="https://youtu.be/aboOD0JoNaE?si=QI5eove9KnYquJMQ"><img src="images/usha uthup.jpeg 2.jpeg" alt="Usha Uthup"><p>Usha Uthup</p></a></div>
+    <div class="singer"><a href="https://youtu.be/DseLYOns-AU?si=yMdwMo-ljdv-gbYn"><img src="images/Singer-Udit-Narayan.jpg" alt="Udit Narayan"><p>Udit Narayan</p></a></div>
+    <div class="singer"><a href="https://youtu.be/KbaUEMQL9Yw?si=WkmYAGlk2OyomYvv"><img src="images/agam kumar nigam.jpg 2.jpg" alt="Agam Kumar Nigam"><p>Agam Kumar Nigam</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/live/TbdFE9zCmtg?si=3mJ6xiZ9yO335brF"><img src="images/sunidhi2.jpg" alt="Sunidhi Chauhan"><p>Sunidhi Chauhan</p></a></div>
+    <div class="singer"><a href="https://www.youtube.com/watch?v=aS_NfWJzPN8"><img src="images/salim merchant.jpeg" alt="Salim Merchant"><p>Salim Merchant</p></a></div>
+    <div class="singer"><a href="https://youtu.be/5DuIvZxMoWQ?si=jqGhEOAP4omyJZoo"><img src="images/shankar mahadevan.jpeg" alt="Shankar Mahadevan"><p>Shankar Mahadevan</p></a></div>
+    <div class="singer"><a href="https://youtu.be/GZ8Ln8j64cY?si=dhnkPlOxFWePtyen"><img src="images/singer shaan2.jpg" alt="Shaan"><p>Shaan</p></a></div>
+    <div class="singer"><a href="https://youtu.be/u_e2rnPg3t4?si=lLogvNftBiWmYecO"><img src="images/astha gill.jpg" alt="Astha Gill"><p>Astha Gill</p></a></div>
+    <div class="singer"><a href="https://youtu.be/vFW6l1sD6kw?si=KO5nCT73W4iJrN3R"><img src="images/atif aslam.jpg" alt="Atif Aslam"><p>Atif Aslam</p></a></div>
+    <div class="singer"><a href="https://youtu.be/AEsz-JD7PFU?si=PvLvqgJsAnU_OsjA"><img src="images/daler mehandi.jpeg" alt="Daler Mehndi"><p>Daler Mehndi</p></a></div>
+    <div class="singer"><a href="https://youtu.be/MiztCrWOVsc?si=XkENBiySw5FjQo4X"><img src="images/mika singh.webp" alt="Mika Singh"><p>Mika Singh</p></a></div>
+    <div class="singer"><a href="https://youtu.be/9KvEV7nvM10?si=xaUWpB4z3AqU2S_R"><img src="images/dhwani 2.jpeg" alt="Dhvani Bhanushali"><p>Dhvani Bhanushali</p></a></div>
+    <div class="singer"><a href="https://youtu.be/npnKG9tX4wU?si=Fc9DvdzX7zb_P9cn"><img src="images/diljit.jpg" alt="Diljit Dosanjh"><p>Diljit Dosanjh</p></a></div>
+    <div class="singer"><a href="https://youtu.be/gPto1QocIiI?si=4NmCxeheVQn-fhVW"><img src="images/javed ali.jpeg" alt="Javed Ali"><p>Javed Ali</p></a></div>
+    <div class="singer"><a href="https://youtu.be/mtGhVzM8JeU?si=IjfZiud567vyUFbT"><img src="images/nakash aziz.jpeg 2.jpg" alt="Nakash Aziz"><p>Nakash Aziz</p></a></div>
+    <div class="singer"><a href="https://youtu.be/Q2iuPUw3oEc?si=R0Z5KdDoS7DdgFSN"><img src="images/neeraj shridhar.jpeg" alt="Neeraj Shridhar"><p>Neeraj Shridhar</p></a></div>
+    <div class="singer"><a href="https://youtu.be/4NnUuCSzP9s?si=eA7Xdw9YYHWd4GOB"><img src="images/palak mucchal.jpeg" alt="Palak Muchhal"><p>Palak Muchhal</p></a></div>
+    <div class="singer"><a href="https://youtu.be/0bSTVx0uqI0?si=_lL9ML5wHkgkoqwL"><img src="images/tonykakkar 2.jpeg" alt="Tony Kakkar"><p>Tony Kakkar</p></a></div>
+    <div class="singer"><a href="https://youtu.be/YpPl7FkqBgQ?si=qbgLYYZ7LE2YVXyH"><img src="images/vishal mishra].jpeg" alt="Vishal Mishra"><p>Vishal Mishra</p></a></div>
+    <div class="singer"><a href="https://youtu.be/hua5py0z1oU?si=u0spOqr1taDH8jUm"><img src="images/jubin nautiyal.jpg" alt="Jubin Nautiyal"><p>Jubin Nautiyal</p></a></div>
+    <div class="singer"><a href="https://youtu.be/AJFEEADdRfY?si=S3Qkh59hB5ZlYAhn"><img src="images/b praak.jpeg" alt="B Praak"><p>B Praak</p></a></div>
+    <div class="singer"><a href="https://youtu.be/ue1Y76aVMbQ?si=cuQJqgWtCHHPLXXI"><img src="images/millind gaba.jpeg" alt="Millind Gaba"><p>Millind Gaba</p></a></div>
+    <div class="singer"><a href="https://youtu.be/ZHVv8A8Oakc?si=tdFOKJWmy11tUKBJ"><img src="images/akhil.jpg" alt="Akhil"><p>Akhil</p></a></div>
+    <div class="singer"><a href="https://youtu.be/6FkJcgso1bY?si=qC3fzHJqVItceTPZ"><img src="images/ankit tiwari.jpg" alt="Akhil"><p>Ankit tiwari</p></a></div>
+    <div class="singer"><a href="https://youtu.be/M--5L4k4QPI?si=ove5EKzLv8pM3iDT"><img src="images/sidhu moose wala.jpg" alt="Akhil"><p>Sidhu moose wala</p></a></div>
+    <div class="singer"><a href="https://youtu.be/v_hdXOsKR8k?si=tifCSDjbB8YtWaPz"><img src="images/himesh reshamiya.png" alt="AHimesh Reshammiya"><p>Himesh Reshammiya</p></a></div>
+    <div class="singer"><a href="https://youtu.be/Z4kWY-VzpRE?si=atC4U1uWOry_uFLq"><img src="images/darshan raval.jpg" alt="Darshan Raval"><p>Darshan Raval</p></a></div>
+    <div class="singer"><a href="https://youtu.be/X-6-wZU_O8U?si=OxMEZKG4Zy0-f4dt"><img src="images/mohammad irfan.jpg" alt="Mohammad irfan"><p>Mohammad irfan</p></a></div>
+    <div class="singer"><a href="https://youtu.be/WBs2bMaZ64Q?si=XWgl5O8ADSo2TRJ4"><img src="images/jass manak.jpg" alt="Jass manak"><p>Jass manak</p></a></div>
+    <div class="singer"><a href="https://youtu.be/WBs2bMaZ64Q?si=XWgl5O8ADSo2TRJ4"><img src="images/armaanmalik" alt="Jass manak"><p>Armaan malik</p></a></div>
+    <div class="singer"><a href="https://youtu.be/WBs2bMaZ64Q?si=XWgl5O8ADSo2TRJ4"><img src="images/shreya ghosal.jpeg" alt="Jass manak"><p>Shreya ghosal</p></a></div>
+    <div class="singer"><a href="https://youtu.be/WBs2bMaZ64Q?si=XWgl5O8ADSo2TRJ4"><img src="images/KS Chithra.jpeg" alt="Jass manak"><p>Ks Chithra</p></a></div>
+    <div class="singer"><a href="https://youtu.be/WBs2bMaZ64Q?si=XWgl5O8ADSo2TRJ4"><img src="images/neha kakkar.jpg" alt="Jass manak"><p>Neha kakkar</p></a></div>
+    <div class="singer"><a href="https://youtu.be/WBs2bMaZ64Q?si=XWgl5O8ADSo2TRJ4"><img src="images/Sadhana sargam.jpeg" alt="Jass manak"><p>Sadhana sargam</p></a></div>
+    <div class="singer"><a href="https://youtu.be/WBs2bMaZ64Q?si=XWgl5O8ADSo2TRJ4"><img src="images/Manna dey.jpg" alt="Jass manak"><p>Manna dey</p></a></div>
+    <div class="singer"><a href="https://youtu.be/WBs2bMaZ64Q?si=XWgl5O8ADSo2TRJ4"><img src="images/Mohammad aziz.jpeg" alt="Jass manak"><p>Mohammad aziz</p></a></div>
+    <div class="singer"><a href="https://youtu.be/WBs2bMaZ64Q?si=XWgl5O8ADSo2TRJ4"><img src="images/pankaj udas" alt="Jass manak"><p>Pankaj udas</p></a></div>
+    <div class="singer"><a href="https://youtu.be/WBs2bMaZ64Q?si=XWgl5O8ADSo2TRJ4"><img src="images/Jassi gill.jpg" alt="Jass manak"><p>Jassi gill</p></a></div>
+  </div>
+
+  <div class="footer">
+    <p>Contact: hostsuraj@gmail.com</p>
+    <p>&copy; 2025 VOCALISTER</p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

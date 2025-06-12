@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhojpuri Songs - VOCALISTER</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/vocalister pic.png" alt="Logo">
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()" style="color: black;">☰</div>
+     <button onclick="changeColor()" class="change-color">
+    <i class="fa-solid fa-palette"></i> Change Background
+  </button>
+
+    <!-- Menu Container -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./hariyanvi.html">Haryanvi Songs</a></li>
+        <li><a href="./bhojpuri.html" style="text-decoration: underline yellow; text-underline-offset: 10px;">Bhojpuri Songs</a></li>
+        <li><a href="./english-song.html">English Songs</a></li>
+        <li><a href="./background-music.html">Background Music</a></li>
+        <li><a href="./dj-songs.html">DJ Songs</a></li>
+      </ul>
+    </div>
+
+   <div class="search-box">
+        <i class="search-icon fas fa-search"></i>
+        <input type="search" id="searchInput" placeholder="Search singer..." />
+      </div>
+  </nav>
+</header>
+
+  <div id="result"></div>
+<div class="gif"><img src="./images/ji.webp" alt="Music GIF"></div>
+
+  <div class="popularsinger">
+    <h1>Bhojpuri Singers</h1>
+  </div>
+
+<div class="singer-grid" id="defaultGrid">
+  <div class="singer"><a href="https://youtu.be/5sfRbZMIsYg?si=B5hJrlFOC6FPU4GF" target="_blank" class="singer-card"><img src="images/manoj tiwari.jpg" alt="manoj tiwari"><p>Manoj Tiwari</p></a></div>
+  <div class="singer"><a href="https://youtu.be/gNDW9GiTUxs?si=TdP4GuLvyMgUFSpL" target="_blank" class="singer-card"><img src="images/pawan_singh.webp" alt="pawan_singh"><p>Pawan Singh</p></a></div>
+  <div class="singer"><a href="https://youtu.be/scUdh4Kstvs?si=pdc1fyT98NZpXgNL" target="_blank" class="singer-card"><img src="images/khesari lal.jpg" alt="khesari lal"><p>Khesari Lal</p></a></div>
+  <div class="singer"><a href="https://youtu.be/kUxzT3vZ2o8?si=fUO2whN1O8hUsOUb" target="_blank" class="singer-card"><img src="images/Dinesh Lal Yadav.jpg" alt="Dinesh lal Yadav"><p>Dinesh Lal Yadav</p></a></div>
+  <div class="singer"><a href="https://youtu.be/uq7Sx71-aik?si=-2lw6CKMIzbQ7wtt" target="_blank" class="singer-card"><img src="images/Pravesh Lal Yadav.jpeg" alt="Pravesh lal Yadav"><p>Pravesh Lal Yadav</p></a></div>
+  <div class="singer"><a href="https://youtu.be/MH7cwN9wOtE?si=WPC22GXqzq5pS3kF" target="_blank" class="singer-card"><img src="images/Bharat Sharma Vyas.jpg" alt="Bharat Sharma Vyas"><p>Bharat Sharma Vyas</p></a></div>
+  <div class="singer"><a href="https://youtu.be/Y_6Kb-vavg4?si=5mq--pfAwjFJi8f8" target="_blank" class="singer-card"><img src="images/Gopal Rai.jpeg" alt="Gopal Rai"><p>Gopal Rai</p></a></div>
+  <div class="singer"><a href="https://youtu.be/yAc7tdcqI20?si=KAPqwC5Apkzwg-db" target="_blank" class="singer-card"><img src="images/guddu rangeela.jpg" alt="guddu rangeela"><p>Guddu Rangeela</p></a></div>
+  <div class="singer"><a href="https://youtu.be/QJ0GSubAOUE?si=rncY3BURg22gtOad" target="_blank" class="singer-card"><img src="images/ajit anand.jpeg" alt="ajit anand"><p>Ajit Anand</p></a></div>
+  <div class="singer"><a href="https://youtu.be/Cma191On0fI?si=28daWmUMY_yzHY5R" target="_blank" class="singer-card"><img src="images/Badal Bawli.jpg" alt="Badal Bawli"><p>Badal Bawli</p></a></div>
+  <div class="singer"><a href="https://youtu.be/z8yjtI6B3Z4?si=q_RiZE-WohbvkY4J" target="_blank" class="singer-card"><img src="images/mohan rathore.jpg" alt="mohan rathor"><p>Mohan Rathor</p></a></div>
+  <div class="singer"><a href="https://youtu.be/m9gXkU2tdSY?si=0HkA1bIvpAuGnFwe" target="_blank" class="singer-card"><img src="images/Alok Kumar.jpg" alt="Alok kumar"><p>Alok Kumar</p></a></div>
+  <div class="singer"><a href="https://youtu.be/lxHGBwaQNFw?si=mELLsK38HbmjP4Sg" target="_blank" class="singer-card"><img src="images/Arvind Akela.jpg" alt="Arvind Akela"><p>Arvind Akela</p></a></div>
+  <div class="singer"><a href="https://youtu.be/qwcDt66Dr1Q?si=hWkPnurabuIc-eTB" target="_blank" class="singer-card"><img src="images/Chotu Chaliya.jpg" alt="Chotu Chaliya"><p>Chotu Chaliya</p></a></div>
+  <div class="singer"><a href="https://youtu.be/SW4_mTUw6nQ?si=VSN5BvsNrOfrLmd4" target="_blank" class="singer-card"><img src="images/Diwakar Drivedy.jpg" alt="Diwakar Drivedy"><p>Diwakar Drivedy</p></a></div>
+  <div class="singer"><a href="https://youtu.be/p3CGbRIzfyA?si=LZIcG638ZwYT_jpJ" target="_blank" class="singer-card"><img src="images/Madan Rai.jpg" alt="Madan rai"><p>Madan Rai</p></a></div>
+  <div class="singer"><a href="https://youtu.be/nULRdLC019Y?si=DXbrXJ9gKAdLGYGB" target="_blank" class="singer-card"><img src="images/Radhe Shyam Rasiya.jpeg" alt="Radhe Shyam Rasiya"><p>Radhe Shyam Rasiya</p></a></div>
+  <div class="singer"><a href="https://youtu.be/xzRNyuQNYrQ?si=NhYguiJtNbrJtvr2" target="_blank" class="singer-card"><img src="images/Sharda Sinha.jpeg" alt="Sharda Sinha"><p>Sharda Sinha</p></a></div>
+  <div class="singer"><a href="https://youtu.be/svn2bqJK1aw?si=fQoGetTsQHj4ZSWj" target="_blank" class="singer-card"><img src="images/anjali jain.jpeg" alt="anjali jain"><p>Anjali Jain</p></a></div>
+  <div class="singer"><a href="https://youtu.be/msmZq44ZmQc?si=670OH1xLmRSlnHji" target="_blank" class="singer-card"><img src="images/Khushboo Raj.jpg" alt="Khushboo raj"><p>Khushboo Raj</p></a></div>
+  <div class="singer"><a href="https://youtu.be/JIsa1bA4bq4?si=SwXDMthlkUCt8VgD" target="_blank" class="singer-card"><img src="images/govind ojha.jpg" alt="govind ojha"><p>Govind Ojha</p></a></div>
+  <div class="singer"><a href="https://youtu.be/hrsiCR690j8?si=Y3Gvcps-46001ZxY" target="_blank" class="singer-card"><img src="images/Mamta Rawat.jpg" alt="Mamta Rawat"><p>Mamta Rawat</p></a></div>
+  <div class="singer"><a href="https://youtu.be/Rd9rh_O8yWU?si=7gexAPRFS2adW9wQ" target="_blank" class="singer-card"><img src="images/nisha dubey.jpeg" alt="nisha dubey"><p>Nisha Dubey</p></a></div>
+  <div class="singer"><a href="https://youtu.be/aHmQuFec8hQ?si=bpOVDQWZbdCk5nVZ" target="_blank" class="singer-card"><img src="images/shilpi raj.jpeg" alt="shilpi raj"><p>Shilpi Raj</p></a></div>
+  <div class="singer"><a href="https://youtu.be/hdRbypET5vo?si=wtgWzOOxId490N3o" target="_blank" class="singer-card"><img src="images/indu sonali.jpeg" alt="indu sonali"><p>Indu Sonali</p></a></div>
+  <div class="singer"><a href="https://youtu.be/HkIrNBjXC20?si=h3GebXbgsfSb0RCK" target="_blank" class="singer-card"><img src="images/farida meer.jpeg" alt="farida meer"><p>Farida Meer</p></a></div>
+  <div class="singer"><a href="https://youtu.be/9QQ06M11bA8?si=dnVT0IwJaFTe-nlg" target="_blank" class="singer-card"><img src="images/shani kumar shaniya.jpeg" alt="shani kumar shaniya"><p>Shani Kumar Shaniya</p></a></div>
+</div>
+
+
+  <div class="footer">
+    <p>Contact: hostsuraj@gmail.com</p>
+      <p>&copy; 2025 VOCALISTER</p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

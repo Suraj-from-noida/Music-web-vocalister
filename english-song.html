@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hariyanvi Songs - VOCALISTER</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/vocalister pic.png" alt="Logo">
+    </div>
+
+        <div class="menu-icon" onclick="toggleMenu()" style="color: black;">☰</div>
+             <button onclick="changeColor()" class="change-color">
+    <i class="fa-solid fa-palette"></i> Change Background
+  </button>
+
+    <!-- Menu Container -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./hariyanvi.html">Haryanvi Songs</a></li>
+        <li><a href="./bhojpuri.html">Bhojpuri Songs</a></li>
+        <li><a href="./english-song.html" style="text-decoration: underline yellow; text-underline-offset: 10px;">English Songs</a></li>
+        <li><a href="./background-music.html">Background Music</a></li>
+        <li><a href="./dj-songs.html">DJ Songs</a></li>
+      </ul>
+    </div>
+
+    <div class="search-box">
+      <input type="search" id="searchInput" placeholder="Search Singer">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+  </nav>
+</header>
+ <div id="result"></div>
+
+ <div class="gif"><img src="./images/disco 4k.webp" alt="Music GIF"></div>
+
+  <div class="popularsinger">
+    <h1>english-song-trending</h1>
+  </div>
+
+
+<div class="singer-grid" id="defaultGrid">
+  <div class="singer"><a href="https://www.youtube.com/watch?v=-Wg8ySt9tO0"><img src="./images/english-song.jpg" alt="justin Bieber"><p></a>On the floor</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=GPvBmcoriNo"><img src="./images/english-song.jpg" alt="Alone pt II"></a><p>Alone pt II</p></div>
+  <div class="singer"><a href="https://youtu.be/XsZZQPKLChY?si=7WSFyUNLJSSzTCfT"><img src="./images/english-song.jpg" alt="ON & ON"></a><p>ON & ON</p></div>
+  <div class="singer"><a href="https://youtu.be/NDEWXnMRq3c?si=9vRvjOsjnAdhzFWR"><img src="./images/english-song.jpg" alt="See you again"></a><p>See you again</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=JXijFYXK_44"><img src="./images/english-song.jpg" alt="copines"></a><p>copines</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=QEbBuW8u1bA"><img src="./images/english-song.jpg" alt="Love Nwantiti"></a><p>Love Nwantiti</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=DPLrNh_5W6I"><img src="./images/english-song.jpg" alt=" Broken Angel "></a><p> Broken Angel </p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=Gwg_KYNgu6Y"><img src="./images/english-song.jpg" alt="Into Your Arms"></a><p>Into Your Arms</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=kJQP7kiw5F"><img src="./images/english-song.jpg" alt="Despacito"></a><p>Despacito</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=Uefu_EU-dW4"><img src="./images/english-song.jpg" alt="Middle of the Night"></a><p>Middle of the Night</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=JJLki0L0Tf4"><img src="./images/english-song.jpg" alt="You and I"></a><p>You and I</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=8VLXHyHRXjc"><img src="./images/english-song.jpg" alt="lovely"></a><p>lovely</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=S3FnZFLOUEY"><img src="./images/english-song.jpg" alt="Bilionera"></a><p>Bilionera</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=0pAkIrJfwao"><img src="./images/english-song.jpg" alt="Yummy"></a><p>Yummy</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=kffacxfA7G4"><img src="./images/english-song.jpg" alt="Baby"></a><p>Baby</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=jJvDnYdD8JQ"><img src="./images/english-song.jpg" alt="Unstoppable"></a><p>Unstoppable</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=XfC6xNwHi2Q"><img src="./images/english-song.jpg" alt="Ride It"></a><p>Ride It</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=lpeuIu-ZYJY"><img src="./images/english-song.jpg" alt="Safari"></a><p>Safari</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=OE140zsQ08I"><img src="./images/english-song.jpg" alt="Cradles"></a><p>Cradles</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=6QYcd7RggNU"><img src="./images/english-song.jpg" alt="Attention"></a><p>Attention</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=LpwAenS7qzY"><img src="./images/english-song.jpg" alt="Infinity"></a><p>Infinity</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=1rVY08gRGmA"><img src="./images/english-song.jpg" alt="Fairytale"></a><p>Fairytale</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=EKkzbbLYPuI"><img src="./images/english-song.jpg" alt="Carol of the Bells"></a><p>Carol of the Bells</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=pp48ANoudy0"><img src="./images/english-song.jpg" alt="Teya Dora"></a><p>Teya Dora</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=d_HlPboLRL8"><img src="./images/english-song.jpg" alt="Teya Dora"></a><p>Runway arora</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=2f31hcGTb-0"><img src="./images/english-song.jpg" alt="Dinero"></a><p>Dinero</p></div>
+  <div class="singer"><a href="https://www.youtube.com/watch?v=UTHLKHL_whs"><img src="./images/english-song.jpg" alt="Teya Dora"></a><p>I told you</p></div>
+</div>
+
+  <div class="footer">
+    <p>Contact: hostsuraj@gmail.com</p>
+      <p>&copy; 2025 VOCALISTER</p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hariyanvi Songs - VOCALISTER</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/hariyanvi.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/vocalister pic.png" alt="Logo">
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()" style="color: black;">☰</div>
+     <button onclick="changeColor()" class="change-color">
+    <i class="fa-solid fa-palette"></i> Change Background
+  </button>
+
+    <!-- Menu Container -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html" >Home</a></li>
+        <li><a href="./hariyanvi.html">Haryanvi Songs</a></li>
+        <li><a href="./bhojpuri.html">Bhojpuri Songs</a></li>
+        <li><a href="./english-song.html">English Songs</a></li>
+        <li><a href="./background-music.html">Background Music</a></li>
+        <li><a href="./dj-songs.html" style="text-decoration: underline yellow; text-underline-offset: 10px;">DJ Songs</a></li>
+      </ul>
+    </div>
+
+    <div class="search-box">
+      <input type="search" id="searchInput" placeholder="Search Singer">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+  </nav>
+</header>
+
+ <div id="result"></div>
+<div class="gif"><img src="./images/dj banner.jpg" alt="Music GIF"></div>
+
+
+  <div class="popularsinger">
+    <h1>DJ songs</h1>
+  </div>
+
+<div class="singer-grid" id="defaultGrid">
+  
+  <div class="singer"> <a href="https://youtu.be/2zSCKUZb7AU?si=x5hVVfSgAr1hVwOa"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/zFroSrprsCU?si=Mgvlz_XMk6zDIdcs"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/LT-unksiTYQ?si=uGksUGU8axSV5gy_"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/DswWXPATet4?si=7IOx4Gj2Pe25maOi"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/36AVZ0-klgk?si=bLaaQOuGTj9Qa93r"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/KenLmL2t9cE?si=KW1ZM4faXfYCIagM"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/4kivZpETWfc?si=fUVF5Vjsspm0Z7kA"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/lAxh7u8MY3Q?si=GcOHGhTw6ItX1u6R"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/SZ9hP0LIwRo?si=e_qKrf6TDQTWrzWl"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/MvOQXLBVAxk?si=UUqsyVmtHOCGT2Xf"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/W7cM1Mk9GLs?si=o_Q8A69C0LqUjg7I"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/Lhyy8jGz14s?si=fomU_wy0x4Zep9CG"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/QQ31X6XShRE?si=WGo9uLRNCuiOXeIY"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/6Bg9PCxhOuU?si=t5av06esJqGyPNPy"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/WX2tTME-mNE?si=29-0yMKdBcuON9Fv"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/IxxlFJ-DURk?si=ANNe-xPE3HzPth9q"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/vbex3hIFobM?si=muM8EBfsELIja7gn"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/VKzyewIU5K8?si=O5OJZH0dTx0k-2aM"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/nre14uktud4?si=b5RS_YC8PSbGAP1g"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/HYE-Y8ySfDc?si=j7CZ1YHvxSvizYET"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/6SOB-SJUiDs?si=QSNoPWq-Sb9kS1oO"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/sV9y7w-KPSA?si=Jb-mSURLChqE6gXM"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/nD2WZW4ExQs?si=5NpB8t25i8vHW0qb"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/XRCue26xxkY?si=w7oqbpw2lmxwfOxI"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/U9_t0H9fEjU?si=h05KjhFc2gcyQNbI"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/EnoVrj6n8tM?si=rkltkXaDSOT7ug8m"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/tjGWApy6Z5Y?si=7dGvhrRQvkG778u7"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/As61wdth880?si=Hh3VmTFoSj_tmGcs"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/fapb7hRm65I?si=QqMFvFRuXygwkEc-"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/WRz22ibD3qI?si=fmjup4Lu4yAH8pDa"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/ykGNUxVNb1M?si=ojA58xcuvkwhT8Kl"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/LMJ1R7vRM-0?si=UtcEcdhbfhENglXq"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/K66G4swdCtw?si=vhF1O0YNrAIagHE7"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/FdCeg1Uzu-o?si=VQk2SeAxTAzbYL-C"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/AgI5VDHJc94?si=j-ire0J_axxtM_uW"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+  <div class="singer"> <a href="https://youtu.be/LK9uaOVLkX8?si=VrFTjLjEOiYv6Yqc"><img src="images/u3.gif" alt="DJ"><p>#1 DJ</p></a></div>
+   
+
+ 
+</div>
+
+  <div class="footer">
+    <p>Contact: hostsuraj@gmail.com</p>
+      <p>&copy; 2025 VOCALISTER</p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
